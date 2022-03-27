@@ -1,0 +1,86 @@
+.product {
+  height: 50vh;
+  opacity: 1;
+  padding-top: 20px;
+  border-radius: 25%;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.back {
+  display: flex;
+  color: black;
+  height: 70vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.prod {
+  color: aliceblue;
+  font-size: 60px;
+  padding-left: 20px;
+}
+.product-detail {
+  font-size: 45px;
+  color: aliceblue;
+  padding-left: 20px;
+}
+
+button {
+  padding: 0.8em 1.8em;
+  border: 2px solid #17c3b2;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: 0.3s;
+  z-index: 1;
+  font-family: inherit;
+  color: #17c3b2;
+}
+
+button::before {
+  content: "";
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #17c3b2;
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+
+button:hover::before {
+  width: 105%;
+}
+
+button:hover {
+  color: #111;
+}
+
+@media only screen and (max-width: 1460px) {
+  .product {
+    height: 45vh;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .product-back {
+    padding-top: 100px;
+  }
+  .product {
+    padding-top: 70px;
+  }
+}
+
+@media only screen and (max-width: 728px) {
+  .product-back {
+    padding-top: 230px;
+    padding-bottom: 150px;
+  }
+}

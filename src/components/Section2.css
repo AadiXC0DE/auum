@@ -1,0 +1,58 @@
+.background {
+  background-color: black;
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+}
+
+.box1 {
+  background-color: #000000;
+}
+
+.text1-heading {
+  color: #fff;
+  font-size: 50px;
+  text-align: center;
+}
+.text1 {
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 30px;
+  margin-top: 110px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.images::-webkit-scrollbar {
+  display: none;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+}
+.image {
+  width: 470px;
+  padding: 20px;
+  object-fit: cover;
+  transition: transform 450ms;
+}
+
+.image:hover {
+  transform: scale(1.08);
+}
+
+.product {
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 700px) {
+  .product {
+    opacity: 0;
+  }
+}

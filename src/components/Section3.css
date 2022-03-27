@@ -1,0 +1,92 @@
+.img-top {
+  height: 50vh;
+  opacity: 0.6;
+  padding-left: 30px;
+  padding-top: 20px;
+}
+
+.back {
+  display: flex;
+  color: black;
+  height: 70vh;
+}
+
+.careers {
+  color: aliceblue;
+  font-size: 60px;
+  margin-left: 50px;
+}
+.careers-detail {
+  font-size: 45px;
+  color: aliceblue;
+  margin-left: 50px;
+}
+
+.careers-detail2 {
+  font-size: 35px;
+  color: aliceblue;
+  margin-left: 50px;
+}
+
+button {
+  padding: 0.8em 1.8em;
+  border: 2px solid #17c3b2;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: 0.3s;
+  z-index: 1;
+  font-family: inherit;
+  color: #17c3b2;
+  margin-left: 50px;
+}
+
+button::before {
+  content: "";
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #17c3b2;
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+
+button:hover::before {
+  width: 105%;
+}
+
+button:hover {
+  color: #111;
+}
+
+@media only screen and (max-width: 1440px) {
+  .back {
+    flex-direction: column;
+    padding-bottom: 40vh;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .img-top {
+    height: 35vh;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .img-top {
+    height: 25vh;
+    margin-top: 60px;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .career {
+    margin-bottom: 200px;
+  }
+}
